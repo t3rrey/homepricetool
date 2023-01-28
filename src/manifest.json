@@ -1,0 +1,30 @@
+{
+    "name": "Home Price Tool",
+    "description": "This tool allows you to see the hidden pricing of homes on reaestate.com.au",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Home Price Tool"
+    },
+    "permissions": {
+        "activeTab": true,
+        "storage": true,
+        "tabs": true,
+        "cookies": true,
+        "webRequest": true,
+        "webRequestBlocking": true,
+        "http://*/*": {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        },
+        "https://*/*": {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ]
+        }
+    }
+}
